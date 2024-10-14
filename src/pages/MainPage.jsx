@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 
 function MainPage() {
   return (
-    <div className="container">
+    <div className="container bg-background">
       <Navbar />
     </div>
   );

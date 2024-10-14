@@ -7,6 +7,15 @@ export default {
     extend: {
       colors: {
         'background': '#222831'
+      },
+      fontSize: {
+
+      },
+      fontFamily: {
+        equalizer: ['IBM Plex Sans']
+      },
+      screens: {
+        'xl': '1440px',
       }
     },
   },
