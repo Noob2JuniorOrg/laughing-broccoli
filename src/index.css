@@ -78,4 +78,12 @@ body {
   }
 }
 
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
 /* Loopstudios styling end */
