@@ -1,6 +1,7 @@
 import React from 'react';
 import BackButton from '../../components/BackButton';
 import Header from './Components/Header';
+import MainSection from './Components/MainSection';
 
 function Loopstudios() {
   return (
@@ -17,6 +18,7 @@ function Loopstudios() {
       </section>
       <section className="h-screen bg-white">
         <Header />
+        <MainSection />
       </section>
     </>
   );
