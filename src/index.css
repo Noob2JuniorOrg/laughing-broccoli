@@ -76,6 +76,86 @@ body {
   .underline-middle:hover::after {
     opacity: 1;
   }
+
+  .mobile-gradient-earth {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-deep-earth.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-arcade {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-night-arcade.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-soccer {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-soccer-team.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-grid {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-grid.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-above {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-from-above.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-borealis {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-pocket-borealis.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-curiosity {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-curiosity.jpg');
+    background-size: cover;
+  }
+
+  .mobile-gradient-fisheye {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.1) 40%,
+        rgba(0, 0, 0, 0.9)
+      ),
+      url('./pages/loopstudios/images/mobile/image-fisheye.jpg');
+    background-size: cover;
+  }
 }
 
 .hidden {
@@ -86,4 +166,15 @@ body {
   display: flex;
 }
 
+.mobile-cards {
+  @apply flex flex-col mt-[3em] gap-6  xl:hidden;
+}
+
+.mobile-card-title {
+  @apply text-white font-extralight uppercase text-[1.5em] max-w-[127px] leading-[24px] relative top-[52px] left-[20px];
+}
+
+.mobile-bg-image {
+  @apply min-w-[20.438em] h-[8em];
+}
 /* Loopstudios styling end */

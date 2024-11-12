@@ -10,7 +10,7 @@ const Description = () => {
         <img src={bgImageDesktop} alt="" className="hidden xl:inline" />
       </div>
       <div className="flex flex-col gap-4 pl-[1.5rem] pr-[1.5rem] pt-[3rem] xl:pl-[6.4rem] xl:pr-0 xl:pt-[6.4rem] xl:inline-block xl:absolute right-0 bg-white max-w-[731px] m-auto xl:w-[33.813rem] xl:h-[317px]">
-        <div className="flex flex-col justify-between items-start gap-6 ">
+        <div className="flex flex-col justify-between items-start gap-6 xl:gap-4 ">
           <p className="uppercase text-[2em] xl:text-[3em] m-auto font-looptstudios-headline font-light text-center xl:text-left leading-[32px] xl:leading-[48px]">
             The leader in interactive VR
           </p>
