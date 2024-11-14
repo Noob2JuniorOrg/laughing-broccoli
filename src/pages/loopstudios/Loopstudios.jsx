@@ -2,6 +2,7 @@ import React from 'react';
 import BackButton from '../../components/BackButton';
 import Header from './Components/Header';
 import MainSection from './Components/MainSection';
+import './loopstudios.css';
 
 function Loopstudios() {
   return (
