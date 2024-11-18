@@ -29,8 +29,8 @@ export const mobileCards = [
 ]
 
 export const icons = [
-    { path: '/src/pages/loopstudios/images/icon-facebook.svg' },
-    { path: '/src/pages/loopstudios/images/icon-twitter.svg' },
-    { path: '/src/pages/loopstudios/images/icon-pinterest.svg' },
-    { path: '/src/pages/loopstudios/images/icon-instagram.svg' }
+    { path: '/src/pages/loopstudios/images/icon-facebook.svg', id: "0", key: 'facebook' },
+    { path: '/src/pages/loopstudios/images/icon-twitter.svg', id: "1", key: 'twitter' },
+    { path: '/src/pages/loopstudios/images/icon-pinterest.svg', id: "2", key: 'pinterest' },
+    { path: '/src/pages/loopstudios/images/icon-instagram.svg', id: "3", key: 'instagram' }
 ]

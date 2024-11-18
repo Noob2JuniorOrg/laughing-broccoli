@@ -20,19 +20,15 @@ const MobileMenu = () => {
     <div
       className={`xl:hidden  left-0 top-0 h-[667px] bg-black w-full z-50 px-[1.5rem] pt-[2.5rem] ${isMenuOpened ? 'absolute' : 'menu-hidden'}`}
     >
-      <div className="flex justify-between items-center ">
+      <div className="menu-header">
         <a href="#home">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[9rem] h-[1.5rem] xl:w-[12rem] xl:h-[2rem]"
-          />
+          <img src={logo} alt="logo" className="logo-img-mobile" />
         </a>
         <div onClick={closeMenu}>
           <img src={closeIcon} alt="icon-close" />
         </div>
       </div>
-      <div className="flex flex-col justify-between font-looptstudios-headline font-extralight text-[1.5em] text-white uppercase h-[221px] mt-[159px]">
+      <div className="menu-links">
         <a href="#">About</a>
         <a href="#">Careers</a>
         <a href="#">Events</a>
