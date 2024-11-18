@@ -1,0 +1,286 @@
+/* Main section styling */
+
+.main-section {
+  @apply bg-white px-[1.5em] py-[6em] xl:px-[10.313em] xl:pt-[10em] xl:pb-[11.5em];
+}
+
+/* Header styling */
+
+.header {
+  @apply relative pt-[2.667em] px-[1.6em] pb-0 xl:p-0 h-[40.625rem] xl:h-[43.333rem] bg-[url('../../pages/loopstudios/images/mobile/image-hero.jpg')] xl:bg-[url('../../pages/loopstudios/images/desktop/image-hero.jpg')] bg-no-repeat bg-cover bg-black/40;
+}
+
+.header-overlay {
+  @apply absolute inset-0 bg-black opacity-0 xl:opacity-40 h-full;
+}
+
+.header-components {
+  @apply flex justify-between relative xl:px-[165px] xl:pt-[64px];
+}
+
+.header-left {
+  @apply flex justify-between w-full xl:w-[192px];
+}
+
+.logo-img {
+  @apply w-[9rem] h-[1.5rem] xl:w-[12rem] xl:h-[2rem];
+}
+
+.banner {
+  @apply relative xl:w-[40.625rem] xl:h-[17.375rem] border-white border-2 p-[1.5rem] xl:p-[2.5rem] mt-[163px] xl:mt-[123px] xl:ml-[165px];
+}
+
+.banner-content {
+  @apply font-looptstudios-headline font-light uppercase text-white text-[2.5em] xl:text-[4.5em] leading-[2.375rem] xl:leading-[4.375rem] h-full;
+}
+
+.menu-hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+/* Nav links styling */
+
+.nav-links {
+  @apply relative hidden xl:flex font-loopstudios text-white justify-between xl:min-w-[380px];
+}
+
+.underline-middle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2px;
+  width: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.underline-middle:hover::after {
+  opacity: 1;
+}
+
+/* Description-styling */
+
+.description {
+  @apply xl:relative xl:h-[31.25em] xl:flex xl:items-end;
+}
+
+.information-styling {
+  @apply flex flex-col gap-4 pl-[1.5rem] pr-[1.5rem] pt-[3rem] xl:pl-[6.4rem] xl:pr-0 xl:pt-[6.4rem] xl:inline-block xl:absolute right-0 bg-white max-w-[731px] m-auto xl:w-[33.813rem] xl:h-[317px];
+}
+
+.information-components {
+  @apply flex flex-col justify-between items-start gap-6 xl:gap-4;
+}
+
+.information-heading {
+  @apply uppercase text-[2em] xl:text-[3em] m-auto font-looptstudios-headline font-light text-center xl:text-left leading-[32px] xl:leading-[48px];
+}
+
+.information-text {
+  @apply text-center xl:text-left font-loopstudios font-light text-[15px] leading-[25px] opacity-50;
+}
+
+/* Creations styling */
+
+.creations {
+  @apply mt-24 flex flex-col xl:flex-row items-center justify-between;
+}
+
+.creations-heading {
+  @apply uppercase font-looptstudios-headline font-light text-[2em] xl:text-[3em] text-center mx-auto xl:m-0;
+}
+
+.button {
+  @apply uppercase border-[1px] border-black text-black font-loopstudios tracking-[5px] font-extralight w-[157px] h-[40px] mt-[34px] xl:mt-0 focus:bg-black focus:text-white ease-in-out duration-300 xl:hover:text-white xl:hover:bg-black;
+}
+
+/* Mobile version cards styling */
+
+.mobile-gradient-earth {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-deep-earth.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-arcade {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-night-arcade.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-soccer {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-soccer-team.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-grid {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-grid.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-above {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-from-above.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-borealis {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-pocket-borealis.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-curiosity {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-curiosity.jpg');
+  background-size: cover;
+}
+
+.mobile-gradient-fisheye {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/mobile/image-fisheye.jpg');
+  background-size: cover;
+}
+
+.mobile-cards {
+  @apply flex flex-col mt-[3em] gap-6  xl:hidden;
+}
+
+.mobile-card-title {
+  @apply text-white font-extralight uppercase text-[1.5em] max-w-[127px] leading-[24px] relative top-[52px] left-[20px];
+}
+
+.mobile-bg-image {
+  @apply min-w-[20.438em] h-[8em];
+}
+
+/* Desktop cards styling */
+
+.desktop-cards {
+  @apply hidden w-full xl:flex flex-wrap gap-[28px] mt-[80px];
+}
+
+.desktop-cards-title {
+  @apply text-white font-extralight uppercase text-[2em] max-w-[148px] leading-[32px] relative top-[354px] left-[40px];
+}
+
+.desktop-gradient-earth {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-deep-earth.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-arcade {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-night-arcade.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-soccer {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-soccer-team.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-grid {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-grid.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-above {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-from-above.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-borealis {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-pocket-borealis.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-curiosity {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-curiosity.jpg');
+  background-size: cover;
+}
+
+.desktop-gradient-fisheye {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 40%,
+      rgba(0, 0, 0, 0.9)
+    ),
+    url('/src/pages/loopstudios/images/desktop/image-fisheye.jpg');
+  background-size: cover;
+}

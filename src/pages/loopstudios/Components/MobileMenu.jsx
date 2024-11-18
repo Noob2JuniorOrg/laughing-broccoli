@@ -18,7 +18,7 @@ const MobileMenu = () => {
 
   return (
     <div
-      className={`xl:hidden  left-0 top-0 h-[667px] bg-black w-full z-50 px-[1.5rem] pt-[2.5rem] ${isMenuOpened ? 'absolute' : 'hidden'}`}
+      className={`xl:hidden  left-0 top-0 h-[667px] bg-black w-full z-50 px-[1.5rem] pt-[2.5rem] ${isMenuOpened ? 'absolute' : 'menu-hidden'}`}
     >
       <div className="flex justify-between items-center ">
         <a href="#home">
