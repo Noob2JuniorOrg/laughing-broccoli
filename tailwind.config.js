@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      display: ["group-hover"],
       colors: {
         'background': '#222831'
       },
@@ -14,7 +15,7 @@ export default {
       fontFamily: {
         'loopstudios': ['Alata'],
         'looptstudios-headline': ['Josefin Sans']
-      }
+      },
     },
   },
   plugins: [],

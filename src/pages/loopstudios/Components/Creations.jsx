@@ -20,11 +20,14 @@ const Creations = () => {
       </div>
       <div className="desktop-cards">
         {desktopCards.map((card, index) => (
-          <div
-            key={index}
-            className={`w-[256px] h-[450px] ${card.gradientClass}`}
-          >
-            <div className="desktop-cards-title">{card.title}</div>
+          <div className="w-[256px] h-[450px] relative group">
+            <div
+              key={index}
+              className={`w-full h-full cursor-pointer absolute group-hover:opacity-50 group-hover:transition-opacity ${card.gradientClass}`}
+            ></div>
+            <div className="absolute inset-0 desktop-cards-title group-hover:text-black">
+              {card.title}
+            </div>
           </div>
         ))}
       </div>
