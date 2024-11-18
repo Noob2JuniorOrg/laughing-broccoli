@@ -3,6 +3,7 @@ import BackButton from '../../components/BackButton';
 import Header from './Components/Header';
 import MainSection from './Components/MainSection';
 import './loopstudios.css';
+import Footer from './Components/Footer';
 
 function Loopstudios() {
   return (
@@ -20,6 +21,7 @@ function Loopstudios() {
       <section className="h-screen bg-white">
         <Header />
         <MainSection />
+        <Footer />
       </section>
     </>
   );

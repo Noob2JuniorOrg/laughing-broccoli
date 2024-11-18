@@ -26,6 +26,10 @@
   @apply w-[9rem] h-[1.5rem] xl:w-[12rem] xl:h-[2rem];
 }
 
+.logo-img-mobile {
+  @apply max-w-[9rem] max-h-[1.5rem] xl:w-[12rem] xl:h-[2rem];
+}
+
 .banner {
   @apply relative xl:w-[40.625rem] xl:h-[17.375rem] border-white border-2 p-[1.5rem] xl:p-[2.5rem] mt-[163px] xl:mt-[123px] xl:ml-[165px];
 }
@@ -45,7 +49,11 @@
 /* Nav links styling */
 
 .nav-links {
-  @apply relative hidden xl:flex font-loopstudios text-white justify-between xl:min-w-[380px];
+  @apply relative hidden xl:flex font-loopstudios text-white text-[15px] justify-between xl:min-w-[380px];
+}
+
+.nav-links-footer {
+  @apply relative flex flex-col xl:flex-row font-loopstudios text-white text-[15px] justify-between items-center gap-4;
 }
 
 .underline-middle::after {
@@ -62,6 +70,23 @@
 }
 
 .underline-middle:hover::after {
+  opacity: 1;
+}
+
+.underline-middle-icons::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2px;
+  width: 50%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.underline-middle-icons:hover::after {
   opacity: 1;
 }
 
@@ -283,4 +308,10 @@
     ),
     url('/src/pages/loopstudios/images/desktop/image-fisheye.jpg');
   background-size: cover;
+}
+
+/* Footer styling */
+
+.social-icons {
+  @apply flex justify-between w-[144px];
 }
