@@ -3,7 +3,7 @@ import Header from './Header';
 
 const Section = () => {
   return (
-    <div className="flex flex-col px-6 pt-[1.938rem] pb-[4.938rem] md:px-[6.094rem] md:pt-[8.75rem] md:pb-[14.75rem] xl:px-[22.188rem] xl:pt-[9rem] xl:pb-[10.625rem]">
+    <div className="dark:bg-dark-mode-black h-screen flex flex-col px-6 pt-[1.938rem] pb-[4.938rem] md:px-[6.094rem] md:pt-[8.75rem] md:pb-[14.75rem] xl:px-[22.188rem] xl:pt-[9rem] xl:pb-[10.625rem]">
       <Header />
     </div>
   );

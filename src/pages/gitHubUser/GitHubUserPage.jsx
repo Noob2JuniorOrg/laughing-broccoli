@@ -2,10 +2,12 @@ import React from 'react';
 import BackButton from '../../components/BackButton';
 import './Styles/GitHubUser.css';
 import Section from './Components/Section';
+import { useState } from 'react';
+import { DarkModeProvider } from './DarkModeContext';
 
 function GitHubUserPage() {
   return (
-    <>
+    <DarkModeProvider>
       <section className="relative z-50">
         <div className="flex items-center bg-background h-[65px]">
           <div>
@@ -19,7 +21,7 @@ function GitHubUserPage() {
       <section className="h-screen bg-off-white">
         <Section />
       </section>
-    </>
+    </DarkModeProvider>
   );
 }
 
