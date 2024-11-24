@@ -18,7 +18,7 @@ function GitHubUserPage() {
           </div>
         </div>
       </section>
-      <section className="h-screen bg-off-white">
+      <section className="bg-off-white">
         <Section />
       </section>
     </DarkModeProvider>
