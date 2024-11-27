@@ -17,16 +17,16 @@ const SearchBar = ({ setSearchInput }) => {
         <input
           value={localInput}
           type="text"
-          className="focus:outline-none min-w-[184px] md:min-w-[254px] dark:bg-dark-blue text-navy-blue dark:text-white placeholder:text-navy-blue placeholder:text-[13px] placeholder:leading-[25px] md:placeholder:text-[18px] placeholder:overflow-ellipsis dark:placeholder:text-[white] text-[13px] md:text-[1rem] xl:text-[18px] leading-[25px]"
+          className="input-field"
           placeholder="Search GitHub username"
           id="search-user"
           onChange={(e) => setLocalInput(e.target.value)}
         />
       </div>
-      <div className="group">
+      <div>
         <button
           onClick={handleSearch}
-          className="w-[5.25rem] h-[2.875rem] md:w-[106px] md:h-[50px] bg-light-blue text-white text-[14px] md:text-[1rem] font-bold rounded-[10px] group-hover:bg-[#60ABFF]"
+          className="w-[5.25rem] h-[2.875rem] md:w-[106px] md:h-[50px] bg-light-blue text-white text-[14px] md:text-[1rem] font-bold rounded-[10px] hover:bg-[#60ABFF] ease-in-out duration-200"
         >
           Search
         </button>

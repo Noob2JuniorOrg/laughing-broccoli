@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import BackButton from '../../components/BackButton';
-import './Styles/GitHubUser.css';
 import Header from './Components/Header';
 import SearchBar from './Components/SearchBar';
 import DataSection from './Components/DataSection';
 import { DarkModeProvider } from './DarkModeContext';
+import './Styles/mainStyles.css';
 
 function GitHubUserPage() {
   const [searchInput, setSearchInput] = useState('octocat');
@@ -21,8 +21,8 @@ function GitHubUserPage() {
           </div>
         </div>
       </section>
-      <section className="bg-off-white  dark:bg-dark-mode-black flex flex-col px-6 pt-[1.938rem] pb-[4.938rem] md:px-[6.094rem] md:pt-[8.75rem] md:pb-[14.75rem] xl:px-[22.188rem] xl:pt-[9rem] xl:pb-[10.625rem]">
-        <div className="xl:max-w-[730px] m-auto">
+      <section className="main-page-style">
+        <div className="w-full xl:max-w-[45.625rem] mx-auto">
           <Header />
           <SearchBar setSearchInput={setSearchInput} />
           <DataSection searchedUser={searchInput} />

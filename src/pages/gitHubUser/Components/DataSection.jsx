@@ -37,39 +37,29 @@ const DataSection = ({ searchedUser }) => {
 
   return (
     <>
-      <div className="flex flex-col gap-[33px] md:gap-6 xl:gap-0 w-full xl:min-w-[730px] h-[517px] xl:min-h-[419px] px-[1.5rem] pt-[2rem] pb-[3rem] md:p-[2.5rem] xl:p-0 mt-6 font-github-user rounded-[15px] bg-white dark:bg-dark-blue drop-shadow-[0_5px_9px_rgba(75,106,155,0.1)] dark:drop-shadow-none">
-        <div className="name-and-avatar flex gap-[19px] md:gap-[41px] xl:px-[3rem] xl:pt-[3rem]">
-          <img
-            src={`${data.avatar_url}`}
-            alt="img"
-            className="w-[70px] h-[70px] md:w-[117px] md:h-[117px] rounded-full"
-          />
-          <div className="name-tag-joined w-full flex flex-col xl:flex-row xl:justify-between h-[69px]">
-            <div className="name-tag">
-              <p className="font-bold text-black text-[16px] md:text-[26px] dark:text-white">
-                {data.name || 'No name'}
-              </p>
-              <p className="font-light text-light-blue text-[13px] md:text-[16px]">
-                {`@${data.login}`}
-              </p>
+      <div className="data-section-layout">
+        <div className="avatar-and-name">
+          <img src={`${data.avatar_url}`} alt="img" className="user-avatar" />
+          <div className="name-tag-joined">
+            <div>
+              <p className="full-name">{data.name || 'No name'}</p>
+              <p className="user-tag">{`@${data.login}`}</p>
             </div>
-            <div className="joined text-light-grey dark:text-white text-[13px] md:text-[15px] xl:self-start xl:mt-2">
+            <div className="join-date">
               {`Joined ${new Date(data.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`}
             </div>
           </div>
         </div>
 
-        <div className=" w-full flex flex-col gap-6 xl:gap-0 md:gap-8 xl:pl-[12.625rem] xl:pr-[3rem] xl:-mt-6">
-          <p className="w-full text-[13px] xl:text-[15px] leading-[25px] text-navy-blue dark:text-white">
-            {data.bio || 'This profile has no bio'}
-          </p>
-          <div className="w-full h-[85px] flex justify-between px-[14.5px] py-[18.5px] md:pl-[2rem] md:pr-[6rem] xl:mt-[2rem] bg-off-white dark:bg-dark-mode-black rounded-[10px]">
+        <div className="user-details">
+          <div className="user-bio">{'This profile has no bio'}</div>
+          <div className="user-statistics">
             <Statistics subject="Repos" count={data.public_repos} />
             <Statistics subject="Followers" count={data.followers} />
             <Statistics subject="Following" count={data.following} />
           </div>
 
-          <div className="flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 md:gap-y-[19px] xl:mt-[4.313rem] items-start justify-between gap-4">
+          <div className="user-information">
             <Information
               iconId="src/pages/gitHubUser/Assets/icon-location.svg"
               data={data.location || 'Not Available'}
