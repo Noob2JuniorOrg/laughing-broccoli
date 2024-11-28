@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Statistics from './Statistics';
 import Information from './Information';
 
-const DataSection = ({ searchedUser }) => {
+const DataSection = ({ searchedUser, isResult, setIsResult }) => {
   const [isLoading, setIsLoading] = useState('false');
   const [data, setData] = useState(null);
   const [error, setError] = useState();
@@ -15,7 +15,12 @@ const DataSection = ({ searchedUser }) => {
         const response = await fetch(
           `https://api.github.com/users/${searchedUser}`
         );
+        if (!response.ok) {
+          setIsResult(false);
+          return;
+        }
         const receivedData = await response.json();
+
         setData(receivedData);
       } catch (error) {
         setError(error);

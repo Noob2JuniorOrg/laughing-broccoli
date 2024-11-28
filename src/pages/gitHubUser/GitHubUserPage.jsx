@@ -8,6 +8,7 @@ import './Styles/mainStyles.css';
 
 function GitHubUserPage() {
   const [searchInput, setSearchInput] = useState('octocat');
+  const [isResult, setIsResult] = useState(true);
 
   return (
     <DarkModeProvider>
@@ -24,8 +25,12 @@ function GitHubUserPage() {
       <section className="main-page-style">
         <div className="w-full xl:max-w-[45.625rem] mx-auto">
           <Header />
-          <SearchBar setSearchInput={setSearchInput} />
-          <DataSection searchedUser={searchInput} />
+          <SearchBar setSearchInput={setSearchInput} isResult={isResult} />
+          <DataSection
+            searchedUser={searchInput}
+            isResult={isResult}
+            setIsResult={setIsResult}
+          />
         </div>
       </section>
     </DarkModeProvider>

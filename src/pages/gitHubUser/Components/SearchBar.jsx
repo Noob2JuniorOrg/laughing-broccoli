@@ -2,7 +2,7 @@ import React from 'react';
 import searchIcon from '../Assets/icon-search.svg';
 import { useState } from 'react';
 
-const SearchBar = ({ setSearchInput }) => {
+const SearchBar = ({ setSearchInput, isResult }) => {
   const [localInput, setLocalInput] = useState('');
 
   const handleSearch = (e) => {
@@ -23,11 +23,14 @@ const SearchBar = ({ setSearchInput }) => {
           onChange={(e) => setLocalInput(e.target.value)}
         />
       </div>
-      <div>
-        <button
-          onClick={handleSearch}
-          className="w-[5.25rem] h-[2.875rem] md:w-[106px] md:h-[50px] bg-light-blue text-white text-[14px] md:text-[1rem] font-bold rounded-[10px] hover:bg-[#60ABFF] ease-in-out duration-200"
+      <div className="flex items-center gap-6">
+        <p
+          className={`${isResult ? 'hidden' : 'block'} text-[#F74646] font-bold`}
         >
+          No results
+        </p>
+
+        <button onClick={handleSearch} className="search-btn">
           Search
         </button>
       </div>
