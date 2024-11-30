@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Statistics from './Statistics';
 import Information from './Information';
 
-const DataSection = ({ searchedUser, isResult, setIsResult }) => {
+const DataSection = ({ searchedUser, setIsResult }) => {
   const [isLoading, setIsLoading] = useState('false');
   const [data, setData] = useState(null);
   const [error, setError] = useState();
@@ -67,24 +67,28 @@ const DataSection = ({ searchedUser, isResult, setIsResult }) => {
           <div className="user-information">
             <Information
               iconId="src/pages/gitHubUser/Assets/icon-location.svg"
+              darkIcon="src/pages/gitHubUser/Assets/dark-location.svg"
               data={data.location || 'Not Available'}
               row_start="1"
               col_start="1"
             />
             <Information
               iconId="src/pages/gitHubUser/Assets/icon-website.svg"
+              darkIcon="src/pages/gitHubUser/Assets/dark-website.svg"
               data={data.blog || 'Not Available'}
               row_start="2"
               col_start="2"
             />
             <Information
               iconId="src/pages/gitHubUser/Assets/icon-twitter.svg"
+              darkIcon="src/pages/gitHubUser/Assets/dark-twitter.svg"
               data={data.twitter_username || 'Not Available'}
               row_start="1"
               col_start="2"
             />
             <Information
               iconId="src/pages/gitHubUser/Assets/icon-company.svg"
+              darkIcon="src/pages/gitHubUser/Assets/dark-company.svg"
               data={data.company || 'Not Available'}
               row_start="1"
               col_start="2"
