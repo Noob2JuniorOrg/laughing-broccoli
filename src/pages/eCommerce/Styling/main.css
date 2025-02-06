@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+/* Nav-links */
+
+.link-mobile {
+    @apply font-e-commerce text-[18px] text-black font-bold;
+}
+
+.thumbnail {
+    @apply hidden xl:block xl:w-[88px] xl:h-[88px] rounded-[10px] cursor-pointer hover:opacity-70 ease-in-out duration-200 focus:opacity-45 focus:border-[2px] focus:border-[#FF7E1B]
+}

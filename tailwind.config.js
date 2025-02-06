@@ -7,6 +7,12 @@ export default {
     extend: {
       colors: {
         'background': '#222831'
+      },
+      screens: {
+        'xl': '1440px'
+      },
+      fontFamily: {
+        'e-commerce': 'Kumbh Sans'
       }
     },
   },
