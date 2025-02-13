@@ -1,25 +1,48 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { useCart } from '../CartContext';
 
 const ProductDetails = () => {
+  const { items, setItems } = useCart();
+  const [chosenCount, setChosenCount] = useState(0);
+
+  const increase = () => {
+    setChosenCount((prevCount) => prevCount + 1);
+  };
+
+  const decrease = () => {
+    if (chosenCount > 0) {
+      setChosenCount((prevCount) => prevCount - 1);
+    }
+  };
+
+  const addToCart = () => {
+    if (items === 0) {
+      setItems(chosenCount);
+    } else {
+      setItems(items + chosenCount);
+    }
+    setChosenCount(0);
+  };
+
   return (
-    <div className="xl:w-[445px] xl:pt-[62px] xl:pb-[67px] font-e-commerce">
-      <div className="uppercase text-[#FF7E1B] xl:text-[13px] font-bold xl:tracking-[2px]">
+    <div className="h-[532px] bg-white xl:w-[445px] px-[24px] pt-[24px] pb-[88px] xl:px-0 xl:pt-[62px] xl:pb-[67px] font-e-commerce">
+      <div className="uppercase text-[#FF7E1B] text-[12px] tracking-[1.85px] xl:text-[13px] font-bold xl:tracking-[2px]">
         Sneaker Company
       </div>
-      <p className="xl:font-bold xl:text-[44px] text-[#1D2026] leading-[48px]">
+      <p className="font-bold text-[28px]  xl:text-[44px] text-[#1D2026] leading-[32px] xl:leading-[48px] mt-[19px] xl:mt-[27px]">
         Fall Limited Edition Sneakers
       </p>
-      <p className="text-[#69707D] tracking-[0px]">
+      <p className="text-[#69707D] tracking-[0px] mt-[15px] xl:mt-[32px]">
         These low-profile sneakers are your perfect casual wear companion.
         Featuring a durable rubber outer sole, they’ll withstand everything the
         weather can offer.
       </p>
 
       {/* Price */}
-      <div className="flex xl:flex-col xl:gap-[10px]">
-        <div className="xl:flex xl:gap-4">
+      <div className="flex xl:flex-col xl:gap-[10px] mt-6 xl:mt-[24px] justify-between">
+        <div className="flex gap-4">
           <p className="font-bold text-[#1D2026] xl:text-[28px]">$125.00</p>
-          <span className="flex justify-center relative top-3 bg-[#FFEEE2] text-[#FF7E1B] font-bold w-[51px] h-[27px] items-center rounded-[6px]">
+          <span className="flex justify-center relative top-1 xl:top-3 bg-[#FFEEE2] text-[#FF7E1B] font-bold w-[51px] h-[27px] items-center rounded-[6px]">
             50%
           </span>
         </div>
@@ -27,11 +50,11 @@ const ProductDetails = () => {
       </div>
 
       {/* Buttons */}
-      <div className="flex flex-col xl:flex-row justify-between xl:gap-[16px]">
+      <div className="flex flex-col xl:flex-row justify-between gap-4 mt-6 xl:mt-[32px]">
         {/* Quantity */}
-        <div className="flex bg-[#F6F8FD] xl:w-[157px] xl:h-[56px] px-[16px] py-[22px] rounded-[10px] items-center justify-between">
+        <div className="flex bg-[#F6F8FD] xl:w-[157px] h-[56px] px-[16px] py-[22px] rounded-[10px] items-center justify-between">
           {/* Minus btn */}
-          <button>
+          <button onClick={decrease}>
             <svg
               width="12"
               height="4"
@@ -47,9 +70,9 @@ const ProductDetails = () => {
               <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#a" />
             </svg>
           </button>
-          <span className="">3</span>
+          <span className="font-bold">{chosenCount}</span>
           {/* Plus btn */}
-          <button>
+          <button onClick={increase}>
             <svg
               width="12"
               height="12"
@@ -67,7 +90,10 @@ const ProductDetails = () => {
           </button>
         </div>
         {/* Add to Cart btn */}
-        <button className="flex xl:w-[272px] h-[56px] bg-[#FF7E1B] rounded-[10px] items-center justify-center xl:gap-[16px] hover:opacity-50 ease-in-out duration-200">
+        <button
+          className="flex xl:w-[272px] h-[56px] bg-[#FF7E1B] rounded-[10px] items-center justify-center xl:gap-[16px] hover:opacity-50 ease-in-out duration-200"
+          onClick={addToCart}
+        >
           <span>
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
               <path

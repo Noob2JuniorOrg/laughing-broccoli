@@ -5,10 +5,12 @@ import avatar from '../images/image-avatar.png';
 import { nav_links_desktop, nav_links_mobile } from '../Data/data';
 import MobileMenu from '../Components/MobileMenu';
 import Cart from './Cart';
+import { useCart } from '../CartContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { items } = useCart();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -71,8 +73,11 @@ const Header = () => {
                 fillRule="nonzero"
               />
             </svg>
-            <span className="bg-orange-500 w-[19px] h-[13px] flex justify-center items-center absolute -top-[7px] left-[9px] rounded-[6.5px] text-[white] text-[12px] font-bold">
-              3
+
+            <span
+              className={`${items === 0 ? 'hidden' : 'bg-orange-500 w-[19px] h-[13px] flex justify-center items-center absolute -top-[7px] left-[9px] rounded-[6.5px] text-[white] text-[12px] font-bold'}`}
+            >
+              {items}
             </span>
           </div>
 

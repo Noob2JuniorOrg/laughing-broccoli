@@ -3,6 +3,7 @@ import BackButton from '../../components/BackButton';
 import Header from './Components/Header';
 import '../eCommerce/Styling/main.css';
 import MainContent from './Components/MainContent';
+import { CartProvider } from './CartContext';
 
 function ECommercePage() {
   return (
@@ -17,8 +18,10 @@ function ECommercePage() {
         </div>
       </section>
       <section className="h-screen bg-white">
-        <Header />
-        <MainContent />
+        <CartProvider>
+          <Header />
+          <MainContent />
+        </CartProvider>
       </section>
     </>
   );

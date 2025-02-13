@@ -17,11 +17,10 @@ const MobileMenu = ({ toggleMenu }) => {
 
       {/* Mobile NavLinks */}
       <div className="p-6">
-        {nav_links_mobile.map((link, index) => (
+        {nav_links_mobile.map((link) => (
           <div key={link.key} className="mb-4">
             <a
               href="#"
-              key={index}
               className="font-e-commerce text-[15px] text-[#69707D] hover:text-black"
             >
               {link.target}
