@@ -1,29 +1,26 @@
-import React from 'react';
-import largeImg from '../images/image-product-1.jpg';
-import thumb1 from '../images/image-product-1-thumbnail.jpg';
-import thumb2 from '../images/image-product-2-thumbnail.jpg';
-import thumb3 from '../images/image-product-3-thumbnail.jpg';
-import thumb4 from '../images/image-product-4-thumbnail.jpg';
+import React, { useState } from 'react';
+import { thumbnails } from '../Data/data';
+import { useCart } from '../CartContext';
+import Thumbnails from './Thumbnails';
 
 const ProductGallery = () => {
+  const { selectedIndex, setSelectedIndex, toggleGallery } = useCart();
+
   return (
-    <div className="xl:flex xl:flex-col gap-[32px]">
+    <div className="xl:flex xl:flex-col gap-[32px] xl:relative">
       {/* Displayed Image */}
       <div className="w-full xl:w-[445px] xl:h-[445px]">
         <img
-          src={largeImg}
+          src={thumbnails[selectedIndex]?.displayImage}
           alt="image"
-          className=" xl:rounded-[15px] cursor-pointer"
+          className="xl:rounded-[15px] cursor-pointer"
+          index={selectedIndex}
+          onClick={toggleGallery}
         />
       </div>
 
       {/* Thumbnails */}
-      <div className="flex gap-[31px]">
-        <img src={thumb1} alt="thumb1" className="thumbnail" />
-        <img src={thumb2} alt="thumb2" className="thumbnail" />
-        <img src={thumb3} alt="thumb3" className="thumbnail" />
-        <img src={thumb4} alt="thumb4" className="thumbnail" />
-      </div>
+      <Thumbnails />
     </div>
   );
 };

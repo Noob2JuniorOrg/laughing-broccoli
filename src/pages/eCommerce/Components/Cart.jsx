@@ -13,9 +13,9 @@ const Cart = () => {
   };
 
   return (
-    <div className="absolute right-[7px] xl:right-[89px] top-[141px] xl:top-[159px] flex flex-col w-[360px] h-[256px] bg-white rounded-[10px] drop-shadow-xl font-e-commerce">
+    <div className="absolute right-[-64px] xl:-right-[180px] top-[54px] xl:top-[50px] flex flex-col w-[360px] h-[256px] bg-white rounded-[10px] drop-shadow-xl font-e-commerce">
       {/* Heading "Cart" */}
-      <div className="font-e-commerce font-bold pt-[24px] pr-[302px] pb-[27px] pl-[24px] border-b-[1px] rounded-t-[10px]">
+      <div className="font-e-commerce font-bold pt-[24px] pr-[302px] pb-[27px] pl-[24px] border-b-[1px] rounded-t-[10px] text-black">
         Cart
       </div>
       {items === 0 ? (
@@ -34,7 +34,7 @@ const Cart = () => {
               {/* Pricing */}
               <div className="flex gap-[6px]">
                 <p className="text-[#69707D]">$125.00 x {items}</p>
-                <div className="font-bold">{`$${items * 125}`}</div>
+                <div className="font-bold text-black">{`$${items * 125}`}</div>
               </div>
             </div>
             <img

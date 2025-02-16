@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useCart } from '../CartContext';
 
 const ProductDetails = () => {
-  const { items, setItems } = useCart();
+  const { items, setItems, toggleCart, isCartOpen } = useCart();
   const [chosenCount, setChosenCount] = useState(0);
 
   const increase = () => {
@@ -16,10 +16,10 @@ const ProductDetails = () => {
   };
 
   const addToCart = () => {
-    if (items === 0) {
-      setItems(chosenCount);
-    } else {
-      setItems(items + chosenCount);
+    items === 0 ? setItems(chosenCount) : setItems(items + chosenCount);
+
+    if (isCartOpen === false && chosenCount > 0) {
+      toggleCart();
     }
     setChosenCount(0);
   };

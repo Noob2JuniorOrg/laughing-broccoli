@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import '../eCommerce/Styling/main.css';
 import MainContent from './Components/MainContent';
 import { CartProvider } from './CartContext';
+import GalleryOverlay from './Components/GalleryOverlay';
 
 function ECommercePage() {
   return (
@@ -17,10 +18,11 @@ function ECommercePage() {
           </div>
         </div>
       </section>
-      <section className="h-screen bg-white">
+      <section className="h-screen bg-white relative">
         <CartProvider>
           <Header />
           <MainContent />
+          <GalleryOverlay />
         </CartProvider>
       </section>
     </>
