@@ -1,27 +1,16 @@
-import React, { useState } from 'react';
 import { thumbnails } from '../Data/data';
-import { useCart } from '../CartContext';
 import Thumbnails from './Thumbnails';
+import { useGallery } from '../Contexts/GalleryContext';
 
 const GalleryOverlay = () => {
-  const { selectedIndex, setSelectedIndex, activeGallery, toggleGallery } =
-    useCart();
-
-  const nextItem = () => {
-    if (selectedIndex < thumbnails.length - 1) {
-      setSelectedIndex(selectedIndex + 1);
-    } else {
-      setSelectedIndex(0);
-    }
-  };
-
-  const prevItem = () => {
-    if (selectedIndex > 0) {
-      setSelectedIndex(selectedIndex - 1);
-    } else {
-      setSelectedIndex(3);
-    }
-  };
+  const {
+    activeGallery,
+    toggleGallery,
+    overlayIndex,
+    setOverlayIndex,
+    prevItemOverlay,
+    nextItemOverlay,
+  } = useGallery();
 
   return (
     <div
@@ -41,7 +30,7 @@ const GalleryOverlay = () => {
               viewBox="0 0 14 15"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
-              className="w-5 h-5 text-white"
+              className="w-5 h-5 text-white hover:text-[#FF7E1B] ease-in-out duration-200"
             >
               <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" />
             </svg>
@@ -49,7 +38,7 @@ const GalleryOverlay = () => {
           {/* icon-prev */}
           <span
             className="flex items-center justify-center absolute w-[56px] h-[56px] top-[237px] -left-[28px] bg-white rounded-full cursor-pointer"
-            onClick={prevItem}
+            onClick={prevItemOverlay}
           >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -64,7 +53,7 @@ const GalleryOverlay = () => {
           {/* icon-next */}
           <span
             className="flex items-center justify-center absolute w-[56px] h-[56px] top-[237px] -right-[28px] bg-white rounded-full cursor-pointer"
-            onClick={nextItem}
+            onClick={() => nextItemOverlay(thumbnails.length - 1)}
           >
             <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -77,13 +66,12 @@ const GalleryOverlay = () => {
             </svg>
           </span>
           <img
-            src={thumbnails[selectedIndex]?.displayImage}
+            src={thumbnails[overlayIndex]?.displayImage}
             alt="largeImage"
             className="w-[550px] h-[550px] rounded-[15px]"
           />
         </div>
-        {/* the thumbnails */}
-        <Thumbnails />
+        <Thumbnails indexType="overlay" />
       </div>
     </div>
   );

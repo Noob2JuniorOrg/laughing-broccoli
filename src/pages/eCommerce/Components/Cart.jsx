@@ -1,7 +1,7 @@
 import React from 'react';
 import preview from '../images/image-product-1-thumbnail.jpg';
 import deleteIcon from '../images/icon-delete.svg';
-import { useCart } from '../CartContext';
+import { useCart } from '../Contexts/CartContext';
 
 const Cart = () => {
   const { items, setItems } = useCart();

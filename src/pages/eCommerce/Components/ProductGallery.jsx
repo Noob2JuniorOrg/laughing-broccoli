@@ -1,30 +1,13 @@
 import React, { useState } from 'react';
 import { thumbnails } from '../Data/data';
-import { useCart } from '../CartContext';
 import Thumbnails from './Thumbnails';
+import { useGallery } from '../Contexts/GalleryContext';
 
 const ProductGallery = () => {
-  const { selectedIndex, setSelectedIndex, toggleGallery } = useCart();
-
-  const nextItem = () => {
-    if (selectedIndex < thumbnails.length - 1) {
-      setSelectedIndex(selectedIndex + 1);
-    } else {
-      setSelectedIndex(0);
-    }
-  };
-
-  const prevItem = () => {
-    if (selectedIndex > 0) {
-      setSelectedIndex(selectedIndex - 1);
-    } else {
-      setSelectedIndex(3);
-    }
-  };
+  const { selectedIndex, toggleGallery, prevItem, nextItem } = useGallery();
 
   return (
     <div className=" xl:flex xl:flex-col gap-[32px] xl:relative ">
-      {/* Displayed Image */}
       <div className="flex w-full xl:w-[445px] xl:h-[445px] relative">
         {/* icon-prev */}
         <span
@@ -51,7 +34,7 @@ const ProductGallery = () => {
         {/* icon-next */}
         <span
           className="flex xl:hidden items-center justify-center absolute w-[40px] h-[40px] top-1/2 -translate-y-1/2 right-4 bg-white rounded-full cursor-pointer"
-          onClick={nextItem}
+          onClick={() => nextItem(thumbnails.length - 1)}
         >
           <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -64,9 +47,7 @@ const ProductGallery = () => {
           </svg>
         </span>
       </div>
-
-      {/* Thumbnails */}
-      <Thumbnails />
+      <Thumbnails indexType="main" />
     </div>
   );
 };

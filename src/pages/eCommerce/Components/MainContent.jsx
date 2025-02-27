@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ProductGallery from './ProductGallery';
 import ProductDetails from './ProductDetails';
-import GalleryOverlay from './GalleryOverlay';
 
 const MainContent = () => {
   return (

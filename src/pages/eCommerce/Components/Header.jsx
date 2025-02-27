@@ -5,7 +5,7 @@ import avatar from '../images/image-avatar.png';
 import { nav_links_desktop, nav_links_mobile } from '../Data/data';
 import MobileMenu from '../Components/MobileMenu';
 import Cart from './Cart';
-import { useCart } from '../CartContext';
+import { useCart } from '../Contexts/CartContext';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

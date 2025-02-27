@@ -4,7 +4,3 @@
 .link-mobile {
     @apply font-e-commerce text-[18px] text-black font-bold;
 }
-
-.thumbnail {
-    @apply hidden xl:block xl:w-[88px] xl:h-[88px] rounded-[10px] cursor-pointer hover:opacity-70
-}

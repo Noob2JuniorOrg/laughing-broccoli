@@ -1,24 +1,30 @@
 import React from 'react';
 import { thumbnails } from '../Data/data';
-import { useCart } from '../CartContext';
+import { useGallery } from '../Contexts/GalleryContext';
 
-const Thumbnails = () => {
-  const { selectedIndex, setSelectedIndex } = useCart();
+const Thumbnails = ({ indexType }) => {
+  const { selectedIndex, setSelectedIndex, overlayIndex, setOverlayIndex } =
+    useGallery();
+
+  const activeIndex = indexType === 'overlay' ? overlayIndex : selectedIndex;
+  const setActiveIndex =
+    indexType === 'overlay' ? setOverlayIndex : setSelectedIndex;
 
   return (
-    <div className="flex gap-[31px] group">
+    <div className="flex gap-[31px]">
       {thumbnails.map((img, index) => (
         <div
-          className={`group rounded-[10px] ${selectedIndex === index ? 'outline outline-[#FF7E1B] outline-[2px]' : ''}`}
-          onClick={() => setSelectedIndex(index)}
+          className={`xl:relative group rounded-[10px] ${activeIndex === index ? 'outline outline-[#FF7E1B] outline-[2px]' : ''}`}
+          onClick={() => setActiveIndex(index)}
           key={index}
           tabIndex="0"
         >
           <img
             src={img.src}
             alt="image"
-            className={`thumbnail group-focus:opacity-30`}
+            className="hidden xl:block xl:w-[88px] xl:h-[88px] rounded-[10px] "
           />
+          <div className="xl:absolute inset-0 bg-white cursor-pointer hover:opacity-40 opacity-0 group-focus:opacity-75 rounded-[10px] transition-opacity duration-200"></div>
         </div>
       ))}
     </div>
