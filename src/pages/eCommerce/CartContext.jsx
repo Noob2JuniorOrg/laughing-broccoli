@@ -7,7 +7,10 @@ export function CartProvider({ children }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [activeGallery, setActiveGallery] = useState(false);
   const toggleGallery = () => {
-    setActiveGallery(!activeGallery);
+    let screenWidth = window.innerWidth;
+    if (screenWidth >= 1440) {
+      setActiveGallery(!activeGallery);
+    }
   };
 
   // Cart functionality

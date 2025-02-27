@@ -7,8 +7,6 @@ const GalleryOverlay = () => {
   const { selectedIndex, setSelectedIndex, activeGallery, toggleGallery } =
     useCart();
 
-  const [galleryIndex, setGalleryIndex] = useState(selectedIndex);
-
   const nextItem = () => {
     if (selectedIndex < thumbnails.length - 1) {
       setSelectedIndex(selectedIndex + 1);
@@ -29,7 +27,6 @@ const GalleryOverlay = () => {
     <div
       className={`${activeGallery ? 'xl:absolute' : 'hidden'} w-full h-screen z-10 flex top-0 left-0 bg-[hsla(0,0%,0%,0.75)] justify-center`}
     >
-      {/* block of large img and thumbnails */}
       <div className="flex flex-col mt-[133px] top-0 z-50 items-center">
         {/* the main img and the span el-s*/}
         <div className="mb-[40px] relative">

@@ -4,7 +4,7 @@ import closeIcon from '../images/icon-close.svg';
 
 const MobileMenu = ({ toggleMenu }) => {
   return (
-    <div className="absolute top-[65px] left-0 h-screen w-[250px] bg-white z-20">
+    <div className="absolute top-0 left-0 h-screen w-[250px] bg-white z-20">
       {/* Close Icon */}
       <div className="p-6">
         <img

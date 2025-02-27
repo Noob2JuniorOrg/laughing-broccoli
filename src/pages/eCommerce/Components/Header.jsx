@@ -57,9 +57,9 @@ const Header = () => {
         {/* Right Section */}
         <section className="nav-right flex items-center gap-[1.375rem] xl:gap-[2.875em] h-6">
           {/* Cart Icon */}
-          <div className="group text-gray-500 cursor-pointer relative">
+          <div className="group text-gray-500  relative z-50">
             <svg
-              className="group-hover:text-black fill-current transition-colors"
+              className="group-hover:text-black fill-current transition-colors cursor-pointer"
               width="22"
               height="20"
               xmlns="http://www.w3.org/2000/svg"
