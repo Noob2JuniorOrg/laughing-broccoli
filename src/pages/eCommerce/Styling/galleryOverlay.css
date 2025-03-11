@@ -1,0 +1,19 @@
+.gallery-overlay-size {
+  @apply xl:absolute w-full h-screen z-10 flex top-0 left-0 bg-[hsla(0,0%,0%,0.75)] justify-center;
+}
+
+.gallery-overlay-styling {
+  @apply flex flex-col mt-[133px] top-0 z-50 items-center;
+}
+
+.overlay-close {
+  @apply cursor-pointer absolute -top-[40px] right-0;
+}
+
+.prev-icon {
+  @apply flex items-center justify-center absolute w-[56px] h-[56px] top-[237px] -left-[28px] bg-white rounded-full cursor-pointer;
+}
+
+.next-icon {
+  @apply flex items-center justify-center absolute w-[56px] h-[56px] top-[237px] -right-[28px] bg-white rounded-full cursor-pointer;
+}

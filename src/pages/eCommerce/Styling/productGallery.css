@@ -1,0 +1,29 @@
+/* Main gallery styling */
+
+.product-gallery-container {
+  @apply xl:flex xl:flex-col gap-[32px] xl:relative;
+}
+
+.product-gallery-sizing {
+  @apply flex w-full xl:w-[445px] xl:h-[445px] relative;
+}
+
+.focused-img {
+  @apply w-full object-cover xl:rounded-[15px] cursor-pointer;
+}
+
+/* Mobile mode */
+
+.prev-img-mobile {
+  @apply flex xl:hidden items-center justify-center absolute w-[40px] h-[40px] top-1/2 -translate-y-1/2 left-4 bg-white rounded-full cursor-pointer;
+}
+
+.next-img-mobile {
+  @apply flex xl:hidden items-center justify-center absolute w-[40px] h-[40px] top-1/2 -translate-y-1/2 right-4 bg-white rounded-full cursor-pointer;
+}
+
+/* Thumbnails */
+
+.thumbnail-backdrop {
+  @apply xl:absolute inset-0 bg-white cursor-pointer hover:opacity-40 opacity-0  rounded-[10px] transition-opacity duration-200;
+}

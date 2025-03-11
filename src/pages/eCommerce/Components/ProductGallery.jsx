@@ -1,19 +1,16 @@
-import React, { useState } from 'react';
 import { thumbnails } from '../Data/data';
 import Thumbnails from './Thumbnails';
 import { useGallery } from '../Contexts/GalleryContext';
+import '../Styling/productGallery.css';
 
 const ProductGallery = () => {
   const { selectedIndex, toggleGallery, prevItem, nextItem } = useGallery();
 
   return (
-    <div className=" xl:flex xl:flex-col gap-[32px] xl:relative ">
-      <div className="flex w-full xl:w-[445px] xl:h-[445px] relative">
+    <div className="product-gallery-container">
+      <div className="product-gallery-sizing ">
         {/* icon-prev */}
-        <span
-          className="flex xl:hidden items-center justify-center absolute w-[40px] h-[40px] top-1/2 -translate-y-1/2 left-4 bg-white rounded-full cursor-pointer"
-          onClick={prevItem}
-        >
+        <span className="prev-img-mobile" onClick={prevItem}>
           <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M11 1 3 9l8 8"
@@ -24,16 +21,17 @@ const ProductGallery = () => {
             ></path>
           </svg>
         </span>
+        {/* Image on focus */}
         <img
           src={thumbnails[selectedIndex]?.displayImage}
           alt="image"
-          className="w-full object-cover xl:rounded-[15px] cursor-pointer"
+          className="focused-img"
           index={selectedIndex}
           onClick={toggleGallery}
         />
         {/* icon-next */}
         <span
-          className="flex xl:hidden items-center justify-center absolute w-[40px] h-[40px] top-1/2 -translate-y-1/2 right-4 bg-white rounded-full cursor-pointer"
+          className="next-img-mobile"
           onClick={() => nextItem(thumbnails.length - 1)}
         >
           <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">

@@ -1,29 +1,24 @@
 import { thumbnails } from '../Data/data';
 import Thumbnails from './Thumbnails';
 import { useGallery } from '../Contexts/GalleryContext';
+import '../Styling/galleryOverlay.css';
 
 const GalleryOverlay = () => {
   const {
     activeGallery,
     toggleGallery,
     overlayIndex,
-    setOverlayIndex,
     prevItemOverlay,
     nextItemOverlay,
   } = useGallery();
 
   return (
-    <div
-      className={`${activeGallery ? 'xl:absolute' : 'hidden'} w-full h-screen z-10 flex top-0 left-0 bg-[hsla(0,0%,0%,0.75)] justify-center`}
-    >
-      <div className="flex flex-col mt-[133px] top-0 z-50 items-center">
-        {/* the main img and the span el-s*/}
+    <div className={`${activeGallery ? 'gallery-overlay-size' : 'hidden'} `}>
+      <div className="gallery-overlay-styling">
+        {/* Image and spans */}
         <div className="mb-[40px] relative">
           {/* close icon */}
-          <span
-            className="cursor-pointer absolute -top-[40px] right-0"
-            onClick={toggleGallery}
-          >
+          <span className="overlay-close" onClick={toggleGallery}>
             <svg
               width="20"
               height="20"
@@ -36,10 +31,7 @@ const GalleryOverlay = () => {
             </svg>
           </span>
           {/* icon-prev */}
-          <span
-            className="flex items-center justify-center absolute w-[56px] h-[56px] top-[237px] -left-[28px] bg-white rounded-full cursor-pointer"
-            onClick={prevItemOverlay}
-          >
+          <span className="prev-icon" onClick={prevItemOverlay}>
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M11 1 3 9l8 8"
@@ -52,7 +44,7 @@ const GalleryOverlay = () => {
           </span>
           {/* icon-next */}
           <span
-            className="flex items-center justify-center absolute w-[56px] h-[56px] top-[237px] -right-[28px] bg-white rounded-full cursor-pointer"
+            className="next-icon"
             onClick={() => nextItemOverlay(thumbnails.length - 1)}
           >
             <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">

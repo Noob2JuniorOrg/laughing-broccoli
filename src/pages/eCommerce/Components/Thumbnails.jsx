@@ -1,6 +1,7 @@
 import React from 'react';
 import { thumbnails } from '../Data/data';
 import { useGallery } from '../Contexts/GalleryContext';
+import '../Styling/productGallery.css';
 
 const Thumbnails = ({ indexType }) => {
   const { selectedIndex, setSelectedIndex, overlayIndex, setOverlayIndex } =
@@ -24,7 +25,7 @@ const Thumbnails = ({ indexType }) => {
             alt="image"
             className="hidden xl:block xl:w-[88px] xl:h-[88px] rounded-[10px] "
           />
-          <div className="xl:absolute inset-0 bg-white cursor-pointer hover:opacity-40 opacity-0 group-focus:opacity-75 rounded-[10px] transition-opacity duration-200"></div>
+          <div className="thumbnail-backdrop group-focus:opacity-75"></div>
         </div>
       ))}
     </div>

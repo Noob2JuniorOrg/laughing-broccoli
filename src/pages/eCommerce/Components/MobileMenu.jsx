@@ -1,10 +1,11 @@
 import React from 'react';
 import { nav_links_mobile } from '../Data/data';
 import closeIcon from '../images/icon-close.svg';
+import '../Styling/mobileMenu.css';
 
 const MobileMenu = ({ toggleMenu }) => {
   return (
-    <div className="absolute top-0 left-0 h-screen w-[250px] bg-white z-20">
+    <div className="mobile-menu">
       {/* Close Icon */}
       <div className="p-6">
         <img
@@ -19,10 +20,7 @@ const MobileMenu = ({ toggleMenu }) => {
       <div className="p-6">
         {nav_links_mobile.map((link) => (
           <div key={link.key} className="mb-4">
-            <a
-              href="#"
-              className="font-e-commerce text-[15px] text-[#69707D] hover:text-black"
-            >
+            <a href="#" className="mobile-nav-link">
               {link.target}
             </a>
           </div>
