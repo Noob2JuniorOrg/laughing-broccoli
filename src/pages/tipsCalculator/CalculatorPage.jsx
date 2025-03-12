@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import BackButton from '../../components/BackButton';
 import MainSection from './Components/MainSection';
 

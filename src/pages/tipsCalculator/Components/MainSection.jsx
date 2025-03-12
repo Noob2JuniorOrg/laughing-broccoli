@@ -16,9 +16,14 @@ const MainSection = ({}) => {
 
   useEffect(() => {
     if (bill > 0 && tip > 0 && peopleCount > 0) {
-      setTipAmount(parseFloat((bill * tip) / 100 / peopleCount).toFixed(2));
+      const newTipAmount = parseFloat((bill * tip) / 100 / peopleCount).toFixed(
+        2
+      );
+      setTipAmount(newTipAmount);
       setTotalAmount(
-        parseFloat((tipAmount * peopleCount + bill) / peopleCount).toFixed(2)
+        parseFloat(
+          (parseFloat(newTipAmount) * peopleCount + bill) / peopleCount
+        ).toFixed(2)
       );
     }
   }, [bill, tip, peopleCount, tipAmount, totalAmount]);
