@@ -1,0 +1,35 @@
+.card {
+  @apply w-[23.438rem] h-[34.125rem] md:w-[24.938rem] md:h-[34.125rem] xl:w-[27.875rem] xl:h-[39.063rem] bg-[#FA7453] rounded-xl;
+}
+
+.card-elements {
+  @apply flex flex-col font-equalizer px-[2.313em] py-[3em] md:p-[3em] xl:pl-[3.375em] xl:pr-[3.688em] xl:pt-[3.625em] xl:pb-[3em];
+}
+
+.card-h2 {
+  @apply font-bold text-white text-[2em] md:leading-[40px] xl:text-[40px];
+}
+
+.card-p {
+  @apply font-light text-[1.125em] text-white mt-[12px] md:mt-[12px] xl:mt-[22px] leading-[28px] xl:leading-[34px] text-left;
+}
+
+.card-price {
+  @apply flex items-center gap-4 h-[52px] md:mt-[2.25rem] xl:mt-[2.438em] text-white;
+}
+
+.buttons-layout {
+  @apply flex flex-col font-bold gap-4 w-full mt-8 xl:mt-[2.875rem];
+}
+
+.apple-btn {
+  @apply flex items-center justify-center gap-2 bg-black text-white h-[3.813em] rounded-xl hover:bg-[#66E2DC] hover:cursor-pointer duration-300;
+}
+
+.android-btn {
+  @apply flex items-center justify-center gap-2 bg-[#FCFAF9] text-black font-bold h-[3.813em] rounded-xl hover:bg-[#FFB964] hover:cursor-pointer duration-300;
+}
+
+.hero-dark-background {
+  @apply w-full h-[600px] bg-[#191826] rounded-xl col-start-1 col-end-3 row-start-1 relative;
+}

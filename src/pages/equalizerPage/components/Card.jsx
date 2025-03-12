@@ -1,6 +1,7 @@
 import React from 'react';
 import apple from '../assets/icon-apple.svg';
 import android from '../assets/icon-android.svg';
+import '../Styling/card.css';
 
 const Card = () => {
   return (

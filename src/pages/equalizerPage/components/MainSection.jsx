@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 import illustration from '../assets/illustration-app.png';
 import pattern from '../assets/bg-pattern-2.svg';
+import '../Styling/mainSection.css';
 
 const MainSection = () => {
   return (

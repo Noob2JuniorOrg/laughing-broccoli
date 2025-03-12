@@ -19,7 +19,7 @@ function EqualizerPage() {
         </div>
       </section>
       <section
-        className="h-screen bg-no-repeat bg-cover w-full"
+        className="min-h-screen w-full bg-white bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${desktopBg})` }}
       >
         <Header />

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 import pattern1 from '../assets/bg-pattern-1.svg';
+import '../Styling/header.css';
 
 const Header = () => {
   return (
