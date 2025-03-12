@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Styling/billInput.css';
 
 const BillInput = ({ setBill }) => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Styling/peopleInput.css';
 
 const PeopleInput = ({ peopleCount, setPeopleCount }) => {
   return (

@@ -5,6 +5,7 @@ import TipInput from './TipInput';
 import PeopleInput from './PeopleInput';
 import ResultContainer from './ResultContainer';
 import { useState, useEffect } from 'react';
+import '../Styling/mainSection.css';
 
 const MainSection = ({}) => {
   const [bill, setBill] = useState(null);
@@ -12,10 +13,6 @@ const MainSection = ({}) => {
   const [peopleCount, setPeopleCount] = useState(null);
   const [tipAmount, setTipAmount] = useState(null);
   const [totalAmount, setTotalAmount] = useState(null);
-
-  console.log(
-    `bill: ${bill}; tip: ${tip}; people: ${peopleCount}; total: ${totalAmount}`
-  );
 
   useEffect(() => {
     if (bill > 0 && tip > 0 && peopleCount > 0) {

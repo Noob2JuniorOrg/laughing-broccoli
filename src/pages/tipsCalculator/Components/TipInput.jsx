@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Styling/tipInput.css';
 
 const TipInput = ({ setTip }) => {
   const handleCustomInput = () => {
