@@ -19,7 +19,7 @@ const Card = () => {
         </div>
         <div className="buttons-layout">
           <button className="apple-btn">
-            <img src={apple} alt="" />
+            <img src={apple} alt="apple" />
             iOS Download
           </button>
           <button className="android-btn">
