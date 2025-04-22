@@ -21,7 +21,6 @@ const PeopleInput = ({ peopleCount, setPeopleCount }) => {
         </>
       ) : (
         <>
-          {' '}
           <div className="flex justify-between">
             <label
               htmlFor="people-count-error"

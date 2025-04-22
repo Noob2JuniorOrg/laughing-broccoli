@@ -4,7 +4,6 @@ import '../Styling/billInput.css';
 const BillInput = ({ setBill }) => {
   return (
     <div>
-      {' '}
       <div className="bill-input">
         <div className="flex items-center justify-between">
           <label htmlFor="bill-size" className="label-styling">
