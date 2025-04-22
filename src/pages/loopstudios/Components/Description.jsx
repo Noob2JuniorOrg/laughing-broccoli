@@ -6,8 +6,12 @@ const Description = () => {
   return (
     <div className="description">
       <div className="xl:absolute">
-        <img src={bgImage} alt="" className="xl:hidden m-auto" />
-        <img src={bgImageDesktop} alt="" className="hidden xl:inline" />
+        <img src={bgImage} alt="background-img" className="xl:hidden m-auto" />
+        <img
+          src={bgImageDesktop}
+          alt="desktop-background"
+          className="hidden xl:inline"
+        />
       </div>
       <div className="information-styling">
         <div className="information-components">

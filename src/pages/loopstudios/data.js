@@ -29,8 +29,16 @@ export const mobileCards = [
 ]
 
 export const icons = [
-    { path: '/src/pages/loopstudios/images/icon-facebook.svg', id: "0", key: 'facebook' },
-    { path: '/src/pages/loopstudios/images/icon-twitter.svg', id: "1", key: 'twitter' },
-    { path: '/src/pages/loopstudios/images/icon-pinterest.svg', id: "2", key: 'pinterest' },
-    { path: '/src/pages/loopstudios/images/icon-instagram.svg', id: "3", key: 'instagram' }
+    { path: '/src/pages/loopstudios/images/icon-facebook.svg', id: "0", key: 'facebook', alt: "facebook-icon" },
+    { path: '/src/pages/loopstudios/images/icon-twitter.svg', id: "1", key: 'twitter', alt: "twitter-icon" },
+    { path: '/src/pages/loopstudios/images/icon-pinterest.svg', id: "2", key: 'pinterest', alt: "pinterest-icon" },
+    { path: '/src/pages/loopstudios/images/icon-instagram.svg', id: "3", key: 'instagram', alt: "instagram-icon" }
+]
+
+export const menuLinks = [
+    { href: "#", target: "About", id: '1' },
+    { href: "#", target: "Careers", id: '2' },
+    { href: "#", target: "Events", id: '3' },
+    { href: "#", target: "Products", id: '4' },
+    { href: "#", target: "Support", id: '5' },
 ]

@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="relative group" key={icon.id}>
               <img
                 src={icon.path}
-                alt="icon"
+                alt={icon.alt}
                 key={icon.key}
                 className="cursor-pointer underline-middle-icons"
               />

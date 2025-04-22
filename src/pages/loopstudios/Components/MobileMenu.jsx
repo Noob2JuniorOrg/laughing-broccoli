@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../images/logo.svg';
 import closeIcon from '../images/icon-close.svg';
 import { useState } from 'react';
+import { menuLinks } from '../data';
 
 const MobileMenu = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(true);
@@ -29,11 +30,11 @@ const MobileMenu = () => {
         </div>
       </div>
       <div className="menu-links">
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
+        {menuLinks.map((link) => (
+          <a href={link.href} key={link.id}>
+            {link.target}
+          </a>
+        ))}
       </div>
     </div>
   );
