@@ -1,0 +1,20 @@
+.footer-logo {
+  @apply w-[9.125em] h-[2em] mb-[2em] xl:mb-0;
+}
+
+.footer-layout {
+  @apply flex flex-col font-equalizer px-[1.5em] md:grid md:ml-[33px] md:mr-[39px] xl:grid xl:mx-[165px];
+}
+
+.footer-contacts {
+  @apply mb-[4em] col-start-1 row-start-2 md:max-w-[22.875em] xl:col-start-2 xl:row-start-1;
+}
+
+.social-icons {
+  @apply flex mb-20 gap-[1.25em] md:col-start-2 md:row-start-2 md:self-center md:justify-self-end xl:col-start-3 xl:row-start-1;
+}
+
+.social-icon-filter:hover {
+  filter: invert(47%) sepia(98%) saturate(1295%) hue-rotate(341deg)
+    brightness(94%) contrast(102%);
+}
