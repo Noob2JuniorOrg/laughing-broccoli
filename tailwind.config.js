@@ -7,9 +7,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        'xl': '1440px'
-      },
+
+      display: ["group-hover"],
       colors: {
         'light-blue': '#0079FF',
         'light-grey': '#697C9A',
@@ -27,7 +26,9 @@ export default {
       fontFamily: {
         equalizer: ['IBM Plex Sans'],
         'github-user': ['Space Mono'],
-        'e-commerce': ['Kumbh Sans']
+        'e-commerce': ['Kumbh Sans'],
+        'loopstudios': ['Alata'],
+        'looptstudios-headline': ['Josefin Sans']
       },
       screens: {
         'xl': '1440px',
@@ -37,5 +38,5 @@ export default {
   variants: {
     fill: ['hover', 'focus'],
   },
-  plugins: [],
+  plugins: []
 }
