@@ -1,0 +1,19 @@
+.main-section-layout {
+  @apply flex flex-col items-center  md:grid xl:grid px-0 md:pl-[33px] md:pr-[39px] xl:px-[165px];
+}
+
+.phone-illustration {
+  @apply md:col-start-1 md:row-start-1  xl:col-start-1 xl:row-start-1 relative z-20 translate-y-[21.125em] md:translate-y-[-8.625em] md:translate-x-[4em] xl:translate-y-[-213px] xl:translate-x-[102px] w-[13.063em] h-[26.875em] md:w-[16.888em] md:h-[34.75em] xl:w-[19.5em] xl:h-[40.125em];
+}
+
+.hero-card-section {
+  @apply col-start-2 row-start-1 z-30 relative justify-self-end translate-y-[-220px] md:translate-x-[-58px] md:translate-y-[150px] xl:translate-x-[-95px] xl:translate-y-[90px];
+}
+
+.hero-pattern {
+  @apply relative z-10 mx-auto w-[280px] h-[420px] xl:w-[312px] xl:h-[468px];
+}
+
+.hero-pattern-position {
+  @apply w-full h-[600px] bg-[#191826] rounded-xl col-start-1 col-end-3 row-start-1 relative;
+}

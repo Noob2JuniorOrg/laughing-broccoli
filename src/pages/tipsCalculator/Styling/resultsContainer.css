@@ -1,0 +1,19 @@
+.result-output {
+  @apply flex flex-col pt-[2.313em] pr-[1.375em] pb-[1.5em] pl-[1.5em] xl:p-[2.5em] w-full h-[16.063rem] md:h-[22.063rem] xl:h-[26.063rem] xl:w-[25.813rem] mt-[2rem] xl:mt-[2rem] bg-calc-dark-green rounded-[15px];
+}
+
+.tip-result-person {
+  @apply flex justify-between items-center xl:max-h-[71px];
+}
+
+.tip-result-total {
+  @apply flex justify-between items-center mt-[1.25em] xl:mt-[1.563em] xl:max-h-[71px];
+}
+
+.reset-btn {
+  @apply h-[3em] font-bold uppercase text-calc-dark-green bg-calc-mid-green hover:cursor-pointer hover:bg-calc-light-green ease-in-out duration-200 rounded-[5px] mt-[2em] md:mt-[7em] xl:mt-[7.625em];
+}
+
+.reset-btn-empty {
+  @apply h-[3em] font-bold uppercase text-[#00474B] bg-[#0D686D] hover:cursor-pointer hover:bg-calc-light-green ease-in-out duration-200 rounded-[5px] mt-[2em] md:mt-[7em] xl:mt-[7.625em];
+}

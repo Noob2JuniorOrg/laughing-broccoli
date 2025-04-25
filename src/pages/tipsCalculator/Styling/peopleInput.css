@@ -1,0 +1,15 @@
+.people-input {
+  @apply flex flex-col gap-[6px] xl:max-w-[23.688rem];
+}
+
+.people-icon {
+  @apply bg-[url('../images/icon-person-new.svg')] bg-no-repeat bg-[1.204rem];
+}
+
+.input-field {
+  @apply font-bold text-2xl focus:outline-2 focus:outline-[#26C2AE] text-[#00474B] w-full h-12 bg-[#F3F9FA] cursor-pointer rounded-[5px] text-right pr-[17px];
+}
+
+.input-field-error {
+  @apply font-bold text-2xl border-2 border-[#E17457] text-[#00474B] w-full h-12 bg-[#F3F9FA] cursor-pointer rounded-[5px] text-right pr-[17px];
+}

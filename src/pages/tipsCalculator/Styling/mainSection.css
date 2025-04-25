@@ -1,0 +1,11 @@
+.calculator-main-section {
+  @apply flex flex-col items-center justify-center mx-auto pt-[50px] md:pt-[163px] md:px-[100px] xl:px-[260px] gap-[2.554em] md:gap-[5.491em] overflow-y-hidden font-calculator;
+}
+
+.calculator-body {
+  @apply flex flex-col md:flex-row md:gap-6 xl:flex-row w-full xl:w-[57.5em] h-screen md:h-[30.063em] xl:h-[30.063em] p-[2rem] xl:p-0 rounded-tl-[25px] rounded-tr-[25px] md:rounded-[25px] bg-white xl:justify-evenly;
+}
+
+.user-input {
+  @apply flex flex-col w-full xl:w-[23.688rem] gap-8 xl:gap-8 xl:mt-12 xl:mb-12;
+}

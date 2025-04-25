@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Main page section styling */
+
+.main-page-style {
+  @apply bg-off-white dark:bg-dark-mode-black flex flex-col px-6 pt-[1.938rem] pb-[4.938rem] md:px-[6.094rem] md:pt-[8.75rem] md:pb-[14.75rem] xl:px-[22.188rem] xl:pt-[9rem] xl:pb-[10.625rem];
+}
+
+/* Header styling */
+
+.header-main-style {
+  @apply flex justify-between items-center font-github-user font-bold text-black;
+}
+
+.logo {
+  @apply text-[26px] dark:text-white;
+}
+
+/* Search bar styling */
+
+.search-btn {
+  @apply w-[5.25rem] h-[2.875rem] md:w-[106px] md:h-[50px] bg-light-blue text-white text-[14px] md:text-[1rem] font-bold rounded-[10px] hover:bg-[#60ABFF] ease-in-out duration-200;
+}
+
+.input-field {
+  @apply focus:outline-none focus:bg-white focus:placeholder:opacity-0 min-w-[184px] md:min-w-[254px] dark:bg-dark-blue text-navy-blue dark:text-white placeholder:text-navy-blue placeholder:text-[13px] placeholder:leading-[25px] md:placeholder:text-[18px] placeholder:overflow-ellipsis dark:placeholder:text-[white] text-[13px] md:text-[1rem] xl:text-[18px] leading-[25px];
+}
+
+/* Data section styling */
+
+.data-section-layout {
+  @apply drop-shadow-xl flex flex-col gap-[33px] md:gap-6 xl:gap-0 w-full xl:min-w-[730px] h-[517px] xl:min-h-[419px] px-[1.5rem] pt-[2rem] pb-[3rem] md:p-[2.5rem] xl:p-0 mt-6 font-github-user rounded-[15px] bg-white dark:bg-dark-blue dark:drop-shadow-none;
+}
+
+/* drop-shadow-[0_5px_9px_rgba(75, 106, 155, 0.1)] */
+
+.avatar-and-name {
+  @apply flex gap-[19px] md:gap-[41px] xl:px-[3rem] xl:pt-[3rem];
+}
+
+.user-avatar {
+  @apply w-[70px] h-[70px] md:w-[117px] md:h-[117px] rounded-full;
+}
+
+.name-tag-joined {
+  @apply w-full flex flex-col xl:flex-row xl:justify-between h-[69px];
+}
+
+.full-name {
+  @apply font-bold text-black text-[16px] md:text-[26px] dark:text-white;
+}
+
+.user-tag {
+  @apply font-light text-light-blue text-[13px] md:text-[16px];
+}
+
+.join-date {
+  @apply text-light-grey dark:text-white text-[13px] md:text-[15px] xl:self-start xl:mt-2;
+}
+
+.user-details {
+  @apply w-full flex flex-col gap-6 xl:gap-0 md:gap-8 xl:pl-[12.625rem] xl:pr-[3rem] xl:-mt-6;
+}
+
+.user-bio {
+  @apply w-full text-[13px] xl:text-[15px] leading-[25px] text-navy-blue dark:text-white;
+}
+
+.user-statistics {
+  @apply w-full h-[85px] flex justify-between px-[14.5px] py-[18.5px] md:pl-[2rem] md:pr-[6rem] xl:mt-[2rem] bg-off-white dark:bg-dark-mode-black rounded-[10px];
+}
+
+.user-information {
+  @apply flex flex-col md:grid md:grid-cols-2 md:grid-rows-2 md:gap-y-[19px] xl:mt-[4.313rem] items-start justify-between gap-4;
+}
+
+/* Statistics styling */
+
+.statistics {
+  @apply flex flex-col items-center md:items-start gap-2 md:gap-[1px];
+}
+
+.stat-subject {
+  @apply text-navy-blue dark:text-white text-[11px] md:text-[13px];
+}
+
+.stat-count {
+  @apply font-bold text-[16px] md:text-[22px] dark:text-white;
+}
+
+/* User info styling */
+
+.information-icon {
+  @apply flex gap-[17.25px] text-navy-blue dark:text-white text-[13px] md:text-[15px];
+}

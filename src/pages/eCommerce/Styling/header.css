@@ -1,0 +1,43 @@
+.header {
+  @apply flex w-full xl:border-b-[1px] xl:border-b-[#979797] pt-[1.188rem] pb-[1.563rem]  xl:pt-[28px] xl:pb-[34px] xl:h-[112px] justify-between items-center;
+}
+
+/* Left side of navigation bar */
+
+.nav-left {
+  @apply flex gap-4 items-center;
+}
+
+.nav-links-desktop {
+  @apply hidden xl:flex justify-between gap-8 ml-[3.531rem];
+}
+
+.desktop-link-styling {
+  @apply transition-all ease-in duration-100 font-e-commerce text-[15px] text-[#69707D] hover:text-black;
+}
+
+.desktop-link-border {
+  @apply relative top-[45px] ease-in duration-100 border-b-4 border-b-transparent group-hover:border-b-[#FF7E1B];
+}
+
+/* Right side of navigation bar  */
+
+.nav-right {
+  @apply flex items-center gap-[1.375rem] xl:gap-[2.875em] h-6;
+}
+
+.cart-counter {
+  @apply bg-orange-500 w-[19px] h-[13px] flex justify-center items-center absolute -top-[7px] left-[9px] rounded-[6.5px] text-[white] text-[12px] font-bold;
+}
+
+.avatar {
+  @apply cursor-pointer w-[26px] h-[26px] xl:w-[3.25em] xl:h-[3.25em];
+}
+
+.avatar-border {
+  @apply border-transparent border-2 ease-in-out duration-200;
+}
+
+.mobile-menu-backdrop {
+  @apply fixed top-0 left-0 w-screen h-screen bg-black opacity-70 z-10;
+}

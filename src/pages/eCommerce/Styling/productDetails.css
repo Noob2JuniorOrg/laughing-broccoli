@@ -1,0 +1,35 @@
+.product-info {
+  @apply h-[532px] bg-white xl:w-[445px] px-[24px] pt-[24px] pb-[88px] xl:px-0 xl:pt-[62px] xl:pb-[67px] font-e-commerce;
+}
+
+.manufacturer {
+  @apply uppercase text-[#FF7E1B] text-[12px] tracking-[1.85px] xl:text-[13px] font-bold xl:tracking-[2px];
+}
+
+.product-name {
+  @apply font-bold text-[28px]  xl:text-[44px] text-[#1D2026] leading-[32px] xl:leading-[48px] mt-[19px] xl:mt-[27px];
+}
+
+.product-description {
+  @apply text-[#69707D] tracking-[0px] mt-[15px] xl:mt-[32px];
+}
+
+.price {
+  @apply flex xl:flex-col xl:gap-[10px] mt-6 xl:mt-[24px] justify-between;
+}
+
+.discount {
+  @apply flex justify-center relative top-1 xl:top-3 bg-[#FFEEE2] text-[#FF7E1B] font-bold w-[51px] h-[27px] items-center rounded-[6px];
+}
+
+.buttons-container {
+  @apply flex flex-col xl:flex-row justify-between gap-4 mt-6 xl:mt-[32px];
+}
+
+.quantity-btn-container {
+  @apply flex bg-[#F6F8FD] xl:w-[157px] h-[56px] px-[16px] py-[22px] rounded-[10px] items-center justify-between;
+}
+
+.add-btn {
+  @apply flex xl:w-[272px] h-[56px] bg-[#FF7E1B] rounded-[10px] items-center justify-center xl:gap-[16px] hover:opacity-50 xl:drop-shadow-none shadow-[0_20px_30px_rgba(255,126,27,0.3)] ease-in-out duration-200;
+}

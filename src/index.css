@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import './pages/loopstudios/loopstudios.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-background;
+}
+
+html,
+body {
+  @apply m-0 p-0 overflow-x-hidden;
+}
+
+.container {
+  @apply min-w-full mt-32;
+}
+
+.btn {
+  @apply rounded-full font-bold uppercase text-white flex flex-col cursor-pointer w-24 h-24 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 will-change-transform;
+  will-change: transform;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.li-item {
+  @apply flex flex-col items-center justify-center font-medium;
+}
+
+.equalizer {
+  background-image: url('../images/equalizer.png');
+}
+
+.calculator {
+  background-image: url('../images/icon-dollar.svg');
+  background-position: center;
+  background-color: transparent;
+}
+
+.github-user {
+  background-image: url('../images/github.png');
+}
+
+.loopstudios {
+  background-image: url('../images/loopstudios.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.e-commerce {
+  background-image: url('../images/e-commerce.jpg');
+}
+
+.back-btn {
+  @apply w-fit bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded m-16 uppercase;
+}

@@ -1,0 +1,15 @@
+.bill-input {
+  @apply flex flex-col gap-[6px] xl:max-w-[23.688rem];
+}
+
+.label-styling {
+  @apply font-bold text-[#5E7A7D];
+}
+
+.input-field {
+  @apply font-bold text-2xl focus:outline-2 focus:outline-[#26C2AE] text-[#00474B] w-full h-12 bg-[#F3F9FA] cursor-pointer rounded-[5px] text-right pr-[17px];
+}
+
+.dollar-icon {
+  @apply bg-[url('../images/icon-dollar.svg')] bg-no-repeat bg-[1.204rem];
+}
