@@ -91,5 +91,5 @@
 /* User info styling */
 
 .information-icon {
-  @apply flex gap-[17.25px] text-navy-blue dark:text-white text-[13px] md:text-[15px]
+  @apply flex gap-[17.25px] text-navy-blue dark:text-white text-[13px] md:text-[15px];
 }

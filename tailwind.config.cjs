@@ -10,9 +10,6 @@ export default {
       screens: {
         'xl': '1440px'
       },
-      fontFamily: {
-        'github-user': 'Space Mono'
-      },
       colors: {
         'light-blue': '#0079FF',
         'light-grey': '#697C9A',
@@ -28,7 +25,8 @@ export default {
 
       },
       fontFamily: {
-        equalizer: ['IBM Plex Sans']
+        equalizer: ['IBM Plex Sans'],
+        'github-user': ['Space Mono'],
       },
       screens: {
         'xl': '1440px',
