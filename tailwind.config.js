@@ -27,6 +27,7 @@ export default {
       fontFamily: {
         equalizer: ['IBM Plex Sans'],
         'github-user': ['Space Mono'],
+        'e-commerce': ['Kumbh Sans']
       },
       screens: {
         'xl': '1440px',
@@ -38,4 +39,3 @@ export default {
   },
   plugins: [],
 }
-

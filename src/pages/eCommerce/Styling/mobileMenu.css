@@ -1,0 +1,7 @@
+.mobile-menu {
+  @apply absolute top-0 left-0 h-screen w-[250px] bg-white z-20;
+}
+
+.mobile-nav-link {
+  @apply font-e-commerce text-[15px] text-[#69707D] hover:text-black;
+}
