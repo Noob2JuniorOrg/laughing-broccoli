@@ -18,7 +18,10 @@ export default {
         'almost-white': '#FEFEFE',
         'dark-mode-black': '#141D2F',
         'dark-blue': '#1E2A47',
-        'background': '#222831'
+        'background': '#222831',
+        'calc-dark-green': '#00474B',
+        'calc-light-green': '#9FE8DF',
+        'calc-mid-green': '#26C2AE'
       },
       fontSize: {
 
@@ -28,7 +31,8 @@ export default {
         'github-user': ['Space Mono'],
         'e-commerce': ['Kumbh Sans'],
         'loopstudios': ['Alata'],
-        'looptstudios-headline': ['Josefin Sans']
+        'looptstudios-headline': ['Josefin Sans'],
+        calculator: ['Space Mono']
       },
       screens: {
         'xl': '1440px',
