@@ -6,7 +6,7 @@
 
 /* Header styling */
 
-.header {
+.header-loopstudios {
   @apply relative pt-[2.667em] px-[1.6em] pb-0 xl:p-0 h-[40.625rem] xl:h-[43.333rem] bg-[url('../../pages/loopstudios/images/mobile/image-hero.jpg')] xl:bg-[url('../../pages/loopstudios/images/desktop/image-hero.jpg')] bg-no-repeat bg-cover bg-black/40;
 }
 
@@ -322,7 +322,7 @@
 
 /* Footer styling */
 
-.footer {
+.footer-loopstudios {
   @apply flex flex-col items-center gap-12 h-[470px] py-[3.5rem] px-[3.25rem] xl:flex-row xl:justify-between xl:gap-[28.625rem] xl:h-[160px] xl:px-[165px] xl:pt-[44px] xl:pb-[33px] bg-black;
 }
 
@@ -334,7 +334,7 @@
   @apply flex flex-col items-center gap-4 xl:items-end xl:gap-6;
 }
 
-.social-icons {
+.social-icons-loopstudios {
   @apply flex justify-between items-center w-[144px];
 }
 

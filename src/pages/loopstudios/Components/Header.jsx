@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className="header-loopstudios">
       <div className="header-overlay"></div>
       <div className="header-components">
         <div className="header-left">

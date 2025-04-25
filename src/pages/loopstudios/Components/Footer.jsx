@@ -5,7 +5,7 @@ import { icons } from '../data';
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer-loopstudios">
       <div className="footer-logo-links">
         <a href="#">
           <img
@@ -28,7 +28,7 @@ const Footer = () => {
         </nav>
       </div>
       <div className="footer-icons-copyright">
-        <div className="social-icons">
+        <div className="social-icons-loopstudios">
           {icons.map((icon, index) => (
             <div className="relative group" key={icon.id}>
               <img
