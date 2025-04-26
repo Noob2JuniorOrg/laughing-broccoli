@@ -11,8 +11,8 @@ const SearchBar = ({ setSearchInput, isResult }) => {
   };
 
   return (
-    <div className="flex w-full h-[3.75rem] mt-[2.25rem] md:h-[4.313rem] bg-white dark:bg-dark-blue drop-shadow-[0_5px_9px_rgba(75,106,155,0.1)] md:drop-shadow-[0_5px_3px_rgba(151,151,151,0.6)] dark:drop-shadow-none rounded-[15px] pl-4 pr-[7px] md:pl-8 md:pr-[0.625rem] items-center justify-between font-github-user">
-      <div className="flex gap-[8.95px] md:gap-6 group">
+    <div className="search-bar-user">
+      <div className="search-bar-left">
         <img src={searchIcon} alt="searchIcon" />
         <input
           value={localInput}
