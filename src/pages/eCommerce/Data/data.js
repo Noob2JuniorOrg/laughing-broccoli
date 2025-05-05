@@ -1,12 +1,12 @@
-import thumb1 from 'src/pages/eCommerce/images/image-product-1-thumbnail.jpg';
-import thumb2 from 'src/pages/eCommerce/images/image-product-2-thumbnail.jpg';
-import thumb3 from 'src/pages/eCommerce/images/image-product-3-thumbnail.jpg';
-import thumb4 from 'src/pages/eCommerce/images/image-product-4-thumbnail.jpg';
+import thumb1 from '../images/image-product-1-thumbnail.jpg';
+import thumb2 from '../images/image-product-2-thumbnail.jpg';
+import thumb3 from '../images/image-product-3-thumbnail.jpg';
+import thumb4 from '../images/image-product-4-thumbnail.jpg';
 
-import full1 from 'src/pages/eCommerce/images/image-product-1.jpg';
-import full2 from 'src/pages/eCommerce/images/image-product-2.jpg';
-import full3 from 'src/pages/eCommerce/images/image-product-3.jpg';
-import full4 from 'src/pages/eCommerce/images/image-product-4.jpg';
+import full1 from '../images/image-product-1.jpg';
+import full2 from '../images/image-product-2.jpg';
+import full3 from '../images/image-product-3.jpg';
+import full4 from '../images/image-product-4.jpg';
 
 export const nav_links_mobile = [
     { target: 'Collection', key: '1' },
