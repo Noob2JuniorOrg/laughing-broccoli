@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { useDarkMode } from '../DarkModeContext';
 import MoonIcon from './MoonIcon';
 import SunIcon from './SunIcon';
@@ -10,7 +9,6 @@ const Header = () => {
   return (
     <div className="header-main-style">
       <h2 className="logo">devfinder </h2>
-
       <div
         className="flex gap-4 cursor-pointer items-center group dark:hidden"
         onClick={toggleDarkMode}

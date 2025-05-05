@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Statistics from './Statistics';
 import Information from './Information';
+import locationIcon from '../Assets/icon-location.svg';
+import darkLocation from '../Assets/dark-location.svg';
+import blogIcon from '../Assets/icon-website.svg';
+import darkBlog from '../Assets/dark-website.svg';
+import twitterIcon from '../Assets/icon-twitter.svg';
+import darkTwitter from '../Assets/dark-twitter.svg';
+import companyIcon from '../Assets/icon-company.svg';
+import darkCompany from '../Assets/dark-company.svg';
 
 const DataSection = ({ searchedUser, setIsResult }) => {
   const [isLoading, setIsLoading] = useState('false');
@@ -66,29 +74,29 @@ const DataSection = ({ searchedUser, setIsResult }) => {
 
           <div className="user-information">
             <Information
-              iconId="src/pages/gitHubUser/Assets/icon-location.svg"
-              darkIcon="src/pages/gitHubUser/Assets/dark-location.svg"
+              iconId={locationIcon}
+              darkIcon={darkLocation}
               data={data.location || 'Not Available'}
               row_start="1"
               col_start="1"
             />
             <Information
-              iconId="src/pages/gitHubUser/Assets/icon-website.svg"
-              darkIcon="src/pages/gitHubUser/Assets/dark-website.svg"
+              iconId={blogIcon}
+              darkIcon={darkBlog}
               data={data.blog || 'Not Available'}
               row_start="2"
               col_start="2"
             />
             <Information
-              iconId="src/pages/gitHubUser/Assets/icon-twitter.svg"
-              darkIcon="src/pages/gitHubUser/Assets/dark-twitter.svg"
+              iconId={twitterIcon}
+              darkIcon={darkTwitter}
               data={data.twitter_username || 'Not Available'}
               row_start="1"
               col_start="2"
             />
             <Information
-              iconId="src/pages/gitHubUser/Assets/icon-company.svg"
-              darkIcon="src/pages/gitHubUser/Assets/dark-company.svg"
+              iconId={companyIcon}
+              darkIcon={darkCompany}
               data={data.company || 'Not Available'}
               row_start="1"
               col_start="2"
