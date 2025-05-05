@@ -32,7 +32,7 @@ const Footer = () => {
           {icons.map((icon, index) => (
             <div className="relative group" key={icon.id}>
               <img
-                src={icon.path}
+                src={icon.src}
                 alt={icon.alt}
                 key={icon.key}
                 className="cursor-pointer underline-middle-icons"

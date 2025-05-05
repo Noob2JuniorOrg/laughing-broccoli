@@ -1,3 +1,8 @@
+import facebookIcon from '/src/pages/loopstudios/images/icon-facebook.svg';
+import twitterIcon from '/src/pages/loopstudios/images/icon-twitter.svg';
+import pinterestIcon from '/src/pages/loopstudios/images/icon-pinterest.svg';
+import instagramIcon from '/src/pages/loopstudios/images/icon-instagram.svg';
+
 export const navLinks = [
     { title: "About" },
     { title: "Careers" },
@@ -29,11 +34,11 @@ export const mobileCards = [
 ]
 
 export const icons = [
-    { path: '/src/pages/loopstudios/images/icon-facebook.svg', id: "0", key: 'facebook', alt: "facebook-icon" },
-    { path: '/src/pages/loopstudios/images/icon-twitter.svg', id: "1", key: 'twitter', alt: "twitter-icon" },
-    { path: '/src/pages/loopstudios/images/icon-pinterest.svg', id: "2", key: 'pinterest', alt: "pinterest-icon" },
-    { path: '/src/pages/loopstudios/images/icon-instagram.svg', id: "3", key: 'instagram', alt: "instagram-icon" }
-]
+    { id: "0", key: 'facebook', alt: "facebook-icon", src: facebookIcon },
+    { id: "1", key: 'twitter', alt: "twitter-icon", src: twitterIcon },
+    { id: "2", key: 'pinterest', alt: "pinterest-icon", src: pinterestIcon },
+    { id: "3", key: 'instagram', alt: "instagram-icon", src: instagramIcon }
+];
 
 export const menuLinks = [
     { href: "#", target: "About", id: '1' },
