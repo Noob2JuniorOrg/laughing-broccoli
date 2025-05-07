@@ -10,7 +10,7 @@ import { GalleryProvider } from './Contexts/GalleryContext';
 function ECommercePage() {
   return (
     <>
-      <section className="relative z-50">
+      <section className="relative">
         <div className="flex items-center max-xl:justify-around bg-background h-[65px]">
           <BackButton />
           <div>
