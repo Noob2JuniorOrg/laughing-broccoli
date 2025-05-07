@@ -17,7 +17,7 @@ const SearchBar = ({ setSearchInput, isResult }) => {
         <input
           value={localInput}
           type="text"
-          className="input-field"
+          className="input-field-user"
           placeholder="Search GitHub username"
           id="search-user"
           onChange={(e) => setLocalInput(e.target.value)}
