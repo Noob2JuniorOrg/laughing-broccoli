@@ -14,7 +14,7 @@ function CalculatorPage() {
           </div>
         </div>
       </section>
-      <section className="h-screen bg-[#C5E4E7]">
+      <section className="bg-[#C5E4E7]">
         <MainSection />
       </section>
     </>

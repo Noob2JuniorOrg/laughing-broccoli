@@ -11,7 +11,7 @@ function ECommercePage() {
   return (
     <>
       <section className="relative">
-        <div className="flex items-center max-xl:justify-around bg-background h-[65px]">
+        <div className="flex items-center bg-background h-[65px]">
           <BackButton />
           <div>
             <h1 className=" text-white font-semibold">E-Commerce</h1>
