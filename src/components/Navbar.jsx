@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
       <h3 className="w-full text-3xl font-medium text-[#61dbfb] mx-auto text-center">
-        React
+        React Projects Hub
       </h3>
       <div>
         <MenuButtons />
